@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script language=”javascript” src=”ex1.js”></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+  <div class="navegacao">
+      <a href="#" class="logo">An@Soft</a>
+      <div class="menu-btn"></div>
+      <div class="navegacao-items">
+          <a href="#">Inicio</a>
+          <a href="#">Projetos</a>
+          <a href="#">Carreira</a>
+          <a href="#">Contatos</a>
+      </div>
+  </div>
+  <script type="text/javascript">
+      // responsibilidade do Javascript do menu de navegacao
+      const menuBtn = document.querySelector(".menu-btn");
+      const navegacao = document.querySelector(".navegacao-items");
+      const body = document.querySelector("body");
+
+      menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navegacao.classList.toggle("active");
+          body.classList.toggle("active");
+         
+      } );
+
+  </script>
+  
+
+</body>
+</html>
+
+
